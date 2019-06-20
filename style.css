@@ -1,0 +1,145 @@
+
+*{
+    margin: 5px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+nav{
+    display: flex;
+    align-items:center;
+    padding-left: 15px;
+    min-height: 8vh;
+    background-color: #F0ECEE;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+.logo{
+    color:black;
+    padding-left:10px; 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+.highlighted-word {
+    color:#FF4850;
+}
+    
+.nav-links{
+    display: flex-colomn ;
+    padding-left: 25px;
+    justify-content: space-around;
+    width: 90%;
+}
+.nav-links li{
+    list-style: none;
+    margin-left: 5px
+}
+
+.nav-links a{
+    color:#88898B;
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-weight: 600;
+    font-size: 14px;   
+}
+body{
+    margin: 0;
+    padding: 0;  
+}
+.container{
+    width: 310px;
+    margin-left: 25px;
+}
+ .btn1,.btn2 {
+   border: 3px solid #FF4850;
+   background: #FF4850;
+   padding: 15px 3px; 
+   font-size: 14px;
+   font-family:'Fira Sans', sans-serif;
+   display: flex-end;  
+   cursor:pointer;
+   margin: 13px;
+   transition: 0.8s;
+   position: relative;
+   overflow: hidden;
+   border-radius:15px;
+   width: 40px;
+  
+}
+
+
+
+.btn1,.btn2{
+    color: #ffff;
+    height: 50px;
+    width: 40%;
+        
+}
+.btn1:hover,.btn2:hover{
+    color:#ccc
+    
+}
+
+.btn1,.btn2:: before {
+    content: "";
+    position: absolute;
+     width: 25px;
+    height: 12%;
+    background: red;
+    z-index: -1;
+    transition: 0.7s;
+}
+
+.btn1:before,.btn2:before{ 
+ top:0;
+ border-radius: 15px;
+}
+.btn1:hover::before,btn2:hover::before{
+    height: 180%;
+}
+ p {
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-left: 26px;
+     padding-top: 120px;
+    font-family: 'Fira Sans', sans-serif;  
+    font-size:30px;
+    font-weight:300px;      
+}
+
+h5 {
+    margin-left: 35px;
+    color:#88898B; 
+    font-weight: 400;
+    font-family:'Fira Sans', sans-serif;     
+    
+}
+
+
+@media screen and (min-width: 640px) { 
+    body {
+            background-image:url(bulldog.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+nav {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #F0ECEE;
+    font-family: 'Fira Sans', sans-serif;
+}
+    .nav-links{
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 0px;
+    }
+
+}
