@@ -30,14 +30,16 @@ nav{
 }
     
 .nav-links{
-    display: flex-colomn ;
+    display: flex-colomn;
     padding-left: 25px;
     justify-content: space-around;
     width: 90%;
 }
 .nav-links li{
     list-style: none;
-    margin-left: 5px
+    margin-left: 5px;
+    
+        
 }
 
 .nav-links a{
@@ -47,6 +49,16 @@ nav{
     font-weight: 600;
     font-size: 14px;   
 }
+
+.nav-links li:hover {
+    color:#FF4850
+    
+}
+
+.nav-links li:hover:before{
+    height: 180%;
+}
+
 body{
     margin: 0;
     padding: 0;  
@@ -64,11 +76,12 @@ body{
    display: flex-end;  
    cursor:pointer;
    margin: 13px;
+   width: auto;
    transition: 0.8s;
    position: relative;
    overflow: hidden;
    border-radius:15px;
-   width: 40px;
+   width: 100px;
   
 }
 
@@ -77,7 +90,7 @@ body{
 .btn1,.btn2{
     color: #ffff;
     height: 50px;
-    width: 40%;
+    width: auto;
         
 }
 .btn1:hover,.btn2:hover{
@@ -121,7 +134,7 @@ h5 {
 }
 
 
-@media screen and (min-width: 640px) { 
+@media screen and (min-width: 768px) { 
     body {
             background-image:url(bulldog.jpg);
             background-repeat: no-repeat;
@@ -130,16 +143,26 @@ h5 {
     
 nav {
     display: flex;
+    
     justify-content:space-around;
     align-items: center;
     min-height: 8vh;
     background-color: #F0ECEE;
     font-family: 'Fira Sans', sans-serif;
 }
-    .nav-links{
-        display: flex;
-        justify-content: flex-end;
-        padding-left: 0px;
+   ul {
+   margin: 0;
+   padding: 0;
+   display: flex;    
+        
     }
+    
+}
 
+
+.btn1,.btn2{
+    color: #ffff;
+    height: 50px;
+    width: 100%;
+        
 }
