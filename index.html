@@ -1,59 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+
+<head>
+    <style>
+        body {
+            background-image: url(bulldog.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    <title>NAVIGATIOn</title>
+</head>
+    
 <body>
-
-<p>"What's the theme?",(casual,semi-formal,formal)</p>
-<p>"What's the expected Temperature"</p>
-  
-Temperature: <input id="temperature" type="text"> </br> </br>
-Event type: <input id="eventType" type="text"> </br> </br>
-
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
-
-<script>
-document.getElementById("demo").onclick = function() {myFunction()};
-  
-function myFunction() {
-var text;
-var temptype = document.getElementById("temperature").value
-var Eventtype = document.getElementById("eventType").value
-  
-switch(Eventtype) {
-case "casual":
-text = "Excellent choice. something comfy is good for a casual event.";
-break;
-case "semi-formal":
-text = "semi-formal, i believe a polo is perfect for such event!";
-break;
-case "formal":
-text = "a Great Suit is perfect for a formal event.";
-break;
-default:
-text = "I'm sorry try again...";
-}
-
-if(temptype < 54) {
-   text += "clothing type coat.";
-}
-
-else if(temptype>=54 && temptype<= 70) {
-   text += "clothing type jacket";
-}
-
-else if(temptype>=70) {
-   text += "no jacket";
-}
-else {
-   text += "I'm sorry try again...";
-}
-
-document.getElementById("demo").innerHTML = text;
-
-}
-  
-</script>
-
+    <nav>
+       <div class="logo">
+           <h4>Adopt<span class="highlighted-word">me</span></h4>
+          
+        </div>  
+        
+        <ul class="nav-links">
+            <li><a href="#">About Us</a></li>
+           
+            <li><a href="#">What we do</a></li>
+           
+            <li><a href="#">Benefits</a></li>
+            
+            <li><a href="#">Our Buddies</a></li>
+            
+            
+          </ul>
+        <div class="container">
+            <button class="btn1">Contact Us</button>
+          </div>       
+    </nav>   
 </body>
+    
+    
+    
+            <p><strong> Do you think about <span class="highlighted-word">           adopting </span><br>
+                a friend?</strong></p>
+           <br>
+      
+           <h5>We will help you choose the best buddy that fits your family <br> 
+               and home perfectly.</h5>
+     
+    
+           <div class="container">
+            <button class="btn2"> 
+                Find out how</button>
+               
+             
+           </div> 
+    
 </html>
